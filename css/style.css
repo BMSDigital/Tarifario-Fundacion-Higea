@@ -1,0 +1,135 @@
+:root{
+    --width: 250px;
+    --padding: 10px;
+    --bgcolor: #005CB9;
+    --hovercolor: #E1251B;
+    --width-collapsed: 50px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* --------------   Menu    -------------- */
+#slide-bar{
+    position: fixed;
+    background-color: cadetblue;
+    height: 100vh;
+    width: var(--width-collapsed);
+    /* left: -200px; */
+    top: 0;
+    transition: left 1.25s;
+    background-image: linear-gradient(to left bottom, #315dda, #275dd4, #1e5dce, #145dc8, #0a5dc2, #075abd, #0356b8, #0053b3, #004dae, #0046a9, #0040a4, #02399f);
+    overflow: hidden;
+    /* box-shadow: inset 0 0 5px black; */
+    transition: width 0.1s;
+}
+
+#slide-bar.active{
+    width: var(--width);
+}
+/*       Logo       */
+
+.menu #logo{
+    text-align: center;
+}
+
+.menu #logo #foto{
+    box-sizing: border-box;
+    padding: var(--padding);
+    margin: 0;
+}
+.menu #logo #foto img{
+    background-color: white; 
+    padding: 0 auto;   
+    /* border-radius: 25%; */
+    width: 100%;
+    /* box-shadow: 2px 2px 5px black; */
+}
+.menu #logo #foto{
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu #logo.hiden{
+
+    opacity: 0;
+}
+
+.menu{
+    width: var(--width);
+    overflow: hidden;
+    
+}
+
+.menu .item {
+    width: var(--width);
+}
+
+.menu .item .btn-icon {
+    display: inline-block;
+}
+
+.menu .item .btn-icon,
+.menu .item .btn-title {
+    font-size: 19px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.menu .item a {
+    margin: 3px;
+    display: block;
+    text-shadow: 2px 2px 5px black;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px 12px 12px 0px;
+}
+
+.menu .item a:hover {
+    background-image: linear-gradient(to left bottom, #eb2c22, #e92b21, #e72a20, #e5281e, #e3271d, #e1261c, #de241a, #dc2319, #d92117, #d52016, #d21e14, #cf1c12);
+    box-shadow: 2px 2px 5px black;
+}
+
+.menu .item .btn-icon {
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--width-collapsed);
+}
+
+.menu .item .btn-icon img {
+    width: 100%;
+}
+
+.menu .item .btn-title {
+    padding: var(--padding) 0;
+}
+
+/* --------------   Menu    -------------- */
+
+
+/* --------------   Cuerpo    -------------- */
+#content{
+    float: center;
+    margin-left: var(--width-collapsed);
+    /* padding-right: 10px; */
+    height: 100vh;    
+    min-width: 600px;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+/* --------------   Cuerpo    -------------- */

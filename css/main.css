@@ -1,0 +1,20 @@
+*{
+    border: 1px solid red;
+}
+
+#pagina-principal{
+    display: flex;
+    background-color: seashell;
+    
+}
+
+#pagina-principal div{
+    box-sizing: border-box;
+    float: center;
+    text-align: center;
+    border: 2px solid red;
+    width: 200px;
+    height: 100px;
+    margin: 50px;
+    background-color: steelblue;
+}
